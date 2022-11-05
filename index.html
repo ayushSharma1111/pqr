@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Photographer Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1.css">
+
+<style>
+:root{
+    --Navbar-Color: rgb(36, 13, 13);
+ 
+    --Button-Color : #29d9d5;
+    
+    --Body-Bg-color:White; 
+ }
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ html{
+ font-size: 70%;
+ }
+ 
+ body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: white;
+ }
+ 
+ /*/////////////////////////////////////////////////////////
+ ////////////////// NAVBAR                     
+ */
+ 
+ .nav{
+    display: flex;
+         align-items: center;
+         justify-content:space-around;
+         height: 10vh;
+         width: 100%;
+         background: var(--Navbar-Color);
+ }
+ 
+ .content a{
+    text-decoration: none;
+    font-size:1.6rem;
+    color: white;
+    margin: 1rem;
+    transition: .4s linear;
+    
+ }
+ .content a:hover{
+    color: #29d9d5;
+ }
+ 
+ 
+ .icon{
+    height: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+ }
+ .icon_img{
+    height: 4rem;
+    width: 4rem;
+    transform: translateY(1rem);
+    fill: aquamarine;
+    text-align: center;
+ }
+ 
+ .btn{
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--Button-Color);
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border: 2px solid  #29d9d5;
+    border-radius:3rem ;
+    transition: .3s linear;
+ 
+ }
+ 
+ .btn:hover{
+    color: black;
+    background-color: var(--Button-Color);
+ }
+
+.blog{
+   color: black;
+   background: #e5d6c3e1;
+   border-radius: 6px;
+   margin: 1.5rem 13rem
+}
+
+.heading-3{
+   padding-top: 1.5rem;
+   padding-inline: 1.5rem;
+   text-transform: capitalize;
+   font-size: 2.2rem;
+   color: rgb(21, 21, 185);
+}
+
+.para{
+   font-size: 1.4rem;
+   padding-left: 1.5rem;
+   padding-bottom: 1rem;
+}
+
+</style>
+</head>
+<body>
+    <nav class="nav">
+    <div class="icon"><svg class="icon_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M220.6 121.2L271.1 96 448 96v96H333.2c-21.9-15.1-48.5-24-77.2-24s-55.2 8.9-77.2 24H64V128H192c9.9 0 19.7-2.3 28.6-6.8zM0 128V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H271.1c-9.9 0-19.7 2.3-28.6 6.8L192 64H160V48c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16l0 16C28.7 64 0 92.7 0 128zM344 304c0 48.6-39.4 88-88 88s-88-39.4-88-88s39.4-88 88-88s88 39.4 88 88z"/></svg> IMAGES</div>  
+ 
+        <div class="content">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Blog</a>
+         <a href="#">Plans</a>
+         <a href="#">Gallery</a>
+         <a href="#">Contact Us</a>
+         </div>
+ 
+         <button class="btn">Book Trial</button>
+ 
+     </nav>
+     <div class="blog">
+        <h3 class="heading-3">Photogarpher's blog</h3>
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti iure rem cum provident tempore sunt autem nostrum a dolorem iste?</p>
+        </div>
+
+</body>
+</html>
